@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body .container-fluid{
+    padding-left: 50px;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 3em;
+}
+
+span{
+    font-size: 15px;
+}
+
+#clickImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+hr{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.section{
+    margin-bottom: 100px;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.navLink{
+    height: 50px;
+}
+
+.navLink a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+header #navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+header #navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+header #navbar ul li{
+    list-style-type: none;
+}
+
+header #navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* INDEx */
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div1 h1, .div1 h2{
+    font-weight: bold;
+}
+
+.motivation h2{
+    font-size: 2.5em;
+}
+
+.temoignage h2, .temoignage span{
+    text-align: center;
+}
+
+.temoignage .row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.carte_temoin{
+    border: 1px solid black;
+}
+
+.carte_temoin img{
+    width: 25px;
+    height: 25px;
+}
+
+.div_valeur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etoile-div{
+    display: flex;
+}
+
+.etoile5{
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+.div_image{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 991.98px){
+    .valeurs_2{
+        display: none;
+    }
+
+    .activite-item{
+        margin-bottom: 15px;
+    }
+
+    .activite-img{
+        margin-bottom: 25px;
+    }
+}
+
+@media(min-width: 991.98px){
+    .valeurs_1{
+        display: none;
+    }
+}
+
+@media(min-width: 576px){
+    .footer_mobile{
+        display: none;
+    }
+    .reseau_desktop ul{
+        float: right;
+    }
+
+    .reseau_desktop ul li{
+        list-style-type: none;
+        float: left;
+        margin-right: 20px;
+    }
+
+    #navMobile{
+        display: none;
+    }
+
+    .experience-text{
+        position: relative;
+        left: 315px;
+    }
+    
+}
+
+@media(max-width: 576px){
+    .footer_desktop{
+        display: none;
+    }
+
+    .reseau_mobile ul{
+        margin-bottom: 50px;
+    }
+
+    .reseau_mobile ul li{
+        list-style-type: none;
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .reseau_desktop ul{
+        float: right;
+    }
+
+    #navDesktop{
+        display: none;
+    }
+}
+
+.citation{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.citation span{
+    text-align: center;
+}
+
+.blockquote_content{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*------------------------------APROPOS----------------------------*/
+
+.time_timeline{
+    margin-right: 150px;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large{
+    background-color: black;
+    height: 2px;
+}
+
+.timeline-item{
+    position: relative;
+    top: -25px;
+    left: -15px;
+}
+
+
+.timelin{
+    border: 1px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.introduction{
+    display: flex;
+    justify-content: center;
+    
+    h2{
+        font-size: 3em;
+        font-weight: bold;
+    }
+}
+
+.education{
+    h2, h4{
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+}
+
+.annee{
+    hr{
+        height: 4px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            span{
+                float: inline-end;
+                position: relative;
+                top: -15px;
+            }
+
+            li{
+                list-style-position: inside;
+            }
+        }
+    }
+
+    
+}
+
+.education .annee_enseignement .ecole_titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education_text{
+    margin-bottom: 50px;
+}
+
+.annee_enseignement{
+    display: none;
+    margin-bottom: 50px;
+}
+
+#experience{
+    display: flex;
+    justify-content: center;
+}
+
+#experience-row{
+    display: flex;
+    justify-content: center;
+}
+
+.experience-div-line{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-div-line .experience-large{
+    width: 2px;
+    height: 100px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.experience-item{
+    border-left: 2px solid black;
+}
+
+.point{
+    font-size: 5em;
+    position: relative;
+    left: -8px;
+}
+
+.entreprise{
+    position: relative;
+    top: 25px;
+}
+
+.mes-experiences{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 2px solid black;
+    margin-bottom: 15px;
+    padding-left: 55px;
+}
+
+.entreprise-list{
+    position: relative;
+    top: -130px;
+}
+
+.entreprise-list1{
+    position: relative;
+    top: -200px;
+}
+
+#mes-experiences1{
+    height: 25px;
+    border-left: 2px solid black;
+}
+
+.entreprise-list0{
+    position: relative;
+    top: -60px;
+}
+
+.entreprise-list2{
+    position: relative;
+    top: -260px;
+}
+
+#competences{
+    position: relative;
+    top: -200px;
+}
+
+#competences .col-sm-4{
+    margin-bottom: 30px;
+}
+
+#competences p{
+    margin-bottom: 50px;
+}
+
+#competences h4{
+    margin-bottom: 30px;
+}
+
+#competences h2{
+    margin-bottom: 50px;
+}
+
+#engagement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+    top: -130px;
+}
+
+#engagement_titre{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.activite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;
+}
+#activite-img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activite-item{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#activite-img2, #activite-img3{
+    display: none;
+}
+
+.cube{
+    width: 50px;
+    height: 50px;
+}
+
+#passion{
+    margin-bottom: 100px;
+    margin-right: 30px;
+    position: relative;
+    top: -60px;
+}
+
+#objectifs{
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.ville_enseignement .ville_titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education_text{
+    margin-bottom: 50px;
+}
+
+.ville_enseignement{
+    display: none;
+    margin-bottom: 50px;
+}
+
+.ville_timeline{
+    margin-right: 150px;
+}
+
+.ville{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-ville{
+    background-color: black;
+    height: 2px;
+}
+
+.villeline-item{
+    font-weight: bold;
+    position: relative;
+    bottom: -25px;
+    left: -15px;
+}
+
+
+.villelin{
+    border: 1px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    background-color: black;
+    justify-content: space-between;
+}
+
+#voyage{
+    margin-bottom: 100px;
+}
+
+.etoile{
+    width: 20px;
+    height: 20px;
+}
+
+#defit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#defit ul{
+    display: flex;
+    justify-content: center;
+}
+
+#defit ul li{
+    list-style-type: none;
+    float: left;
+}
+
+#defit .text-center{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#aspiration{
+    margin-bottom: 100px;
+}
+
+/*---------------------------BLOG------------------------------*/
+
+.blog_titre{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2{
+        font-size: 3em;
+    }
+}
+
+.blog_categories ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;  
+}
+
+.blog_categories ul li{
+    list-style-type: none;
+    float: left;
+}
+
+.blog_articles .col-md-4{
+    margin-bottom: 30px;           
+}
+
+.blog_articles .col-md-4 .col-10 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.col-md-4 .image_article{
+    height: 50%;
+}
+
+.col-md-4 div .col-3, div .col-5{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+
+/* --------------------CONTACT------------------------*/
+#mailto{
+    color: black;
+}
+
+.link a{
+    display: flex;
+    justify-content: center;
+}
+
+.link a:hover{
+    color: black;
+}
+
+#tel_link{
+    color: black;
+}
+
+/*-----------------ARTICLES---------------------*/
+
+#auteur{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#auteur .col-sm-9{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#auteur_image{
+    width: 60%;
+    height: 60%;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+#auteur .reseau_desktop ul li a img{
+    width: 15px;
+    height: 15px;
+}
+
+.intro_article{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.intro_article p{
+    margin-bottom: 50px;
+}
+
+.intro_article i{
+    border-left: 2px solid black;
+    margin-bottom: 50px;
+}
+
+.intro_article span{
+    border-left: 2px solid black;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="bg-light" id="navDesktop">
+		<nav>
+			<div id="navbar">
+				<img src="images/logo.jpg"/ width="80px" height="80px">
+				<ul>
+
+					<li class="mx-4"><a href="index.html">Accueil</a></li>
+					<li class="mx-4"><a href="apropos.html">A propos</a></li>
+					<li class="mx-4"><a href="blog.html">Blog</a></li>
+					<li class="mx-4"><a href="contact.html">Contact</a></li>
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<header class="bg-light" id="navMobile">
+		<nav>
+			<div class="row" id="navbar">
+				<div class="col-1">
+					<img src="images/logo.jpg" width="80px" height="80px">
+				</div>
+
+				<div class="col-1" id="clickImage">
+					<img src="images/menu.png" width="20px" height="20px">
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="row navLink mt-4"><a href="index.html">Accueil</a></div>
+				<div class="row navLink"><a href="apropos.html">A propos</a></div>
+				<div class="row navLink"><a href="blog.html">Blog</a></div>
+				<div class="row navLink"><a href="contact.html">Contact</a></div>
+				
+			</div>
+		</nav>
+	</header>
+    <main class="container-fluid">
+
+        <div class="row mb-3">
+            <h4>Contact</h4>
+            <h2>Contactez-nous</h2>
+            <span>Nous sommes là pour réponbre à vos questions</span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <form class="form" method="POST" action="">
+                    <div class="row mb-3">
+                        <div class="form-group col-6">
+                            <label class="mb-2" for="name">Nom</label>
+                            <input type="text" class="form-control" id="name">
+                            <span id="name_error"></span>
+                        </div>
+                        <div class="form-group col-6">
+                            <label class="mb-2" for="surname">Prénoms</label>
+                            <input type="text" class="form-control" id="surname">
+                            <span id="surname_error"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="form-group col-sm-6">
+                            <label class="mb-2" for="mail">Email</label>
+                            <input type="email" class="form-control" id="mail" >
+                            <span id="mail_error"></span>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label class="mb-2" for="number">Numéros de téléphone</label>
+                            <input type="number" min="0" class="form-control" id="number">
+                            <span id="number_error"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="form-group">
+                            <label class="mb-2" for="sujet">Choisissez un sujet</label>
+                            <select class="form-control" name="sujet" id="sujet">
+                                <option value="choisir">Choisissez un...</option>
+                                <option value="option1">option1</option>
+                                <option value="option2">option2</option>
+                                <option value="option3">option3</option>
+                                <option value="option4">option4</option>
+                            </select>
+                            <span id="sujet_error"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <span class="mb-2">Comment préférez-vous être contacté ?</span>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="radio" name="preference_contact" id="preference_contact1" value="Email">
+                            <label for="preference_contact1" class="form-check-label">Email</label>
+                        </div>
+
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="radio" name="preference_contact" id="preference_contact2" value="Téléphone">
+                            <label for="preference_contact2" class="form-check-label">Téléphone</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="radio" name="preference_contact" id="preference_contact3" value="Poste">
+                            <label for="preference_contact3" class="form-check-label">Poste</label>
+                        </div>
+
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="radio" name="preference_contact" id="preference_contact4" value="Autres">
+                            <label for="preference_contact4" class="form-check-label">Autres</label>
+                        </div>
+                    </div>
+                    <span id="preference_error"></span>
+
+                    <div class="row mb-4">
+                        <label for="message" class="mb-2">Message</label>
+                        <textarea name="message" id="message" rows="10" cols="100"></textarea>
+                        <span id="message_error"></span>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="accepter" value="accepter" id="accepter">
+                            <label for="accepter" class="form-check-label">J'accepte les conditions</label>
+                        </div>
+                        <span id="accepter_error"></span>
+                    </div>
+
+                    <button type="submit" id="soumettre" class="btn btn-dark">Soumettre</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-5 mb-5">
+                        <img src="images/contact/courrier.png" width="30px" height="30px" class="img img-fluid" alt="">
+                        <h5>Email</h5>
+                        <span>Contactez-nous à tout moment <br><a href="mailto:hello@gmail.com" id="mailto">hello@gmail.com</a></span>
+                    </div>
+                    <div class="col-md-5 mb-5">
+                        <img src="images/contact/telephone.png" width="30px" height="30px" class="img img-fluid" alt="">
+                        <h5>Téléphone</h5>
+                        <span>Appelez-nous pour plus d'infos<br><a href="tel:0154712901" id="tel_link">0154712901</a></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 mb-4">
+                        <img src="images/contact/localisateur.png" width="30px" height="30px" class="img img-fluid" alt="">
+                        <h5>Bureau</h5>
+                        <span>123 Sample St, Sydney NSW 2000 AU</span>
+                    </div>
+                    <div class="row link">
+                    <a class="btn btn-secondary mx-3 col-5" href="https://maps.app.goo.gl/KcXDzARRKVaexVXw5">Obtenir des directions<img src="images/fleche.png" class="img-fluid" width="20px" height="20px" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <hr>
+
+    <footer class="container-fluid mb-5">
+		<div class="row footer_desktop">
+			<div class="col-sm-5 copy">Copyright - Vertueux NOUKPO</div>
+			
+			<div class="col-sm-7 reseau_desktop">
+				<ul>
+					<li>
+						<a href="http://www.facebook.com">
+							<img src="images/icone/facebook.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.instagram.com">
+							<img src="images/icone/instagram.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.twitter.com">
+							<img src="images/icone/twitter.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.linkedin.com">
+							<img src="images/icone/linkedin.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.youtube.com">
+							<img src="images/icone/youtube.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row footer_mobile">
+
+			<div class="reseau_mobile">
+				<ul>
+					<li>
+						<a href="http://www.facebook.com">
+							<img src="images/icone/facebook.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.instagram.com">
+							<img src="images/icone/instagram.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.twitter.com">
+							<img src="images/icone/twitter.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.linkedin.com">
+							<img src="images/icone/linkedin.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.youtube.com">
+							<img src="images/icone/youtube.png" class="img img-fluid" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="copy_mobile">Copyright - Nom Prénoms</div>
+			
+		</div>
+	</footer>
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/contact.js"></script>
+
+</body>
+</html>
